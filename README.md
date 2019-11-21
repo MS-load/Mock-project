@@ -1,21 +1,24 @@
 # Mock-project
 Recreate and improvise and existing website
 
-##The website chosen:
+***
+
+## The website chosen:
     Yammy Kitchen (Restaurant in Gothenburg)
-a. Index_Homepage
-b. Menu
-c. Booking
+* a. Index_Homepage
+* b. Menu
+* c. Booking
 
-##Link to the original website:
-a. http://www.yammykitchen.se
-b. http://www.yammykitchen.se/meny
-c. http://www.yammykitchen.se/kontakt
+## Link to the original website:
+* a. http://www.yammykitchen.se
+* b. http://www.yammykitchen.se/meny
+* c. http://www.yammykitchen.se/kontakt
 
+***
 
-##Refinements on the original website include the following:
+## Refinements on the original website include the following:
 
-###General Changes:
+### General Changes:
 1.Changed the header (to flow with the rest of the page)
 2.Added information to the Footer(For better structure)
 3.Made the website responsive
@@ -36,9 +39,9 @@ c. Booking
 3.Added a How to reach location.
 4.Directly linked to the fork page for booking a table 
 
+***
 
-
-##Group Members:
+## Group Members:
 	Lisa Bengtsson
 	Ellinor Carlberg
 	Mamta Srinivas
