@@ -1,0 +1,132 @@
+/*-------------- GENERAL STYLES-------------- */
+
+html {
+  font-size: 1rem;
+}
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/*--------------BACKGROUND-------------- */
+
+main {
+  background-image: url(../Media_Files/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*-------------- RESPONSIVE FONT -------------- */
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+/*--------------LOGO ANIMATION-------------- */
+
+path {
+  stroke: black;
+  opacity: 10;
+  stroke-dasharray: 570;
+  animation: logo 5s linear;
+}
+
+.circle {
+  fill: #ff4444;
+  stroke: #ff4444;
+  opacity: 0;
+  animation: fadein 4s ease-in 3s forwards;
+  filter: url(#shadow);
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 510;
+  }
+  25% {
+    opacity: 10;
+    fill: none;
+    stroke-dashoffset: 525;
+  }
+  50% {
+    fill: rgba(255, 255, 255, 0);
+  }
+  100% {
+    fill: rgb(0, 0, 0);
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*--------------QUOTE-------------- */
+
+.fas {
+  color: #d9534f;
+}
+
+/*--------------REVIEWS-------------- */
+
+.resize {
+  font-size: 0.7rem;
+}
+
+/*--------------STEAM ANIMATION-------------- */
+
+.steam {
+  font-size: 3rem;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+  font-family: 'Mansalva', cursive;
+  transform: scaleY(2.5);
+  filter: blur(4px);
+  position: absolute;
+  top: 3rem;
+  width: 90vw;
+  animation: steam 5s linear infinite normal;
+}
+
+@keyframes steam {
+  0% {
+    top: 3rem;
+    opacity: 0.9;
+  }
+  25% {
+    top: 2rem;
+    opacity: 0.75;
+  }
+  50% {
+    top: 1rem;
+    opacity: .5;
+  }
+  75% {
+    top: -1rem;
+    opacity: .25;
+  }
+  100% {
+    top: -3rem;
+    opacity: 0;
+   }
+}

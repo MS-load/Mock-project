@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yammy Kitchen | Meny</title>
+
+    <!-- EXTERNAL LIBRARIES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5fcee0469f.js" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="./Styles/menu.css" type="text/css">
+
+    <!-- FONTS  -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top
+                        border-bottom border-secondary shadow ">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item text-body"><a class="nav-link" href="./index.html">Hem</a></li>
+                    <li class="nav-item text-body"><a class="nav-link" href="#">Om Oss</a></li>
+                    <li class="nav-item text-body"><a class="nav-link" href="./menu.html">Meny</a></li>
+                    <li class="nav-item text-body"><a class="nav-link d-md-none d-lg-none" href="./booking.html">Boka
+                            Bord</a></li>
+                </ul>
+            </div>
+
+            <!-- LOGO and SVG FOR ANIMATION -->
+            <div class="mx-auto order-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="68" viewBox="0 0 708 210">
+                    <defs>
+                        <filter id="shadow">
+                            <feDropShadow dx="0.05" dy="0.2" stdDeviation="5" flood-color="white" />
+                        </filter>
+                    </defs>
+                    <ellipse cx="336" cy="105" rx="100" ry="100" class="circle" />
+                    <rect y="67" width="1073" height="114" fill="none" />
+                    <path d="M23 138v-29L1 71h10l10 19c3 5 5 9 7 14h0c2-4 4-9 7-14l10-19h10l-23 39v29H23z" class="a" />
+                    <path
+                        d="M65 117l-7 21h-9L71 71h11l23 67h-9l-7-21H65zM87 110l-7-19c-1-4-2-8-3-12h0c-1 4-2 8-3 12L66 110H87z"
+                        class="a" />
+                    <path
+                        d="M171 109c0-9-1-21-1-29h0c-2 8-5 16-8 26l-12 33h-7l-11-32c-3-9-6-18-8-26h0c0 8-1 20-1 30l-2 29H113l5-67h11l12 33c3 8 5 16 7 23h0c2-7 4-14 7-23l12-33h11l4 67h-8L171 109z"
+                        class="a" />
+                    <path
+                        d="M252 109c0-9-1-21-1-29h0c-2 8-5 16-8 26l-12 33H223l-11-32c-3-9-6-18-8-26h0c0 8-1 20-1 30l-2 29h-8l5-67H209l12 33c3 8 5 16 7 23h0c2-7 4-14 7-23l12-33h11l4 67h-8L252 109z"
+                        class="a" />
+                    <path d="M290 138v-29l-21-39h10l10 19c3 5 5 9 7 14h0c2-4 4-9 7-14l10-19h10l-23 39v29H290z"
+                        class="a" />
+                    <path d="M350 71h9v33h0c2-3 4-5 5-7l21-25h11l-24 29 26 39h-10l-22-33 -6 7v26h-9V71z" class="a" />
+                    <path d="M413 71v67h-9V71H413z" class="a" />
+                    <path d="M441 78h-21v-7h50v7h-21v60h-9V78z" class="a" />
+                    <path
+                        d="M523 136c-3 2-10 3-18 3 -19 0-33-12-33-34 0-21 14-35 35-35 8 0 14 2 16 3l-2 7c-3-2-8-3-14-3 -16 0-26 10-26 28 0 17 10 27 26 27 5 0 11-1 14-3L523 136z"
+                        class="a" />
+                    <path d="M542 71v28h33V71h9v67h-9v-32h-33v32h-9V71H542z" class="a" />
+                    <path d="M634 107h-26v24h29v7h-38V71h36v7h-28v21h26V107z" class="a" />
+                    <path
+                        d="M648 138V71h10l22 34c5 8 9 15 12 22l0 0c-1-9-1-17-1-28V71h8v67h-9l-21-34c-5-7-9-15-13-23l0 0c1 9 1 17 1 28v29H648z"
+                        class="a" />
+                </svg>
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- MAKING A RESERVATION BUTTON -->
+            <div class="navbar-collapse collapse w-100 order-2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./booking.html" role="button"
+                            class="d-none d-md-block btn btn-danger shadow rounded">Boka
+                            Bord</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="mt-5 pt-5">
+        <h1>MENY<i class="fas fa-utensils pl-3"></i></h1>
+        <div class="container1">
+
+            <!-- LEFT SIDE MENU-->
+            <div class="container2">
+                <div class="styled">
+                    <h3>APPETIZERS|FÖRRÄTTER</h3>
+                    <div class="box4">
+                        <div>
+                            <ul>
+                                <li>GYOZA <small> 6 pieces of homemade steam fried dumplings filled with a mix of minced
+                                        pork, shrimp and cabbage</small> 96</li>
+                                <li>BEEF KIMCHI MANDU <small> 4 pieces of homemade deep fried dumplings filled with a
+                                        mix of
+                                        minced beef and kimchi</small> 76</li>
+                                <li>WOONTON SOUP <small> of pork with vegetable and spring onion</small> 69</li>
+                                <li>BEEF KIMSHI SPICY SOUP <small> Soup with sliced beef, tofu, vegetables and
+                                        kimchi</small> 78 </li>
+                                <li>MINI SPRINGROLLS <small> 6 pieces of deep fried vegan mini springrolls </small>48
+                                </li>
+                                <li>AGEDASHI TOFU <small> Deep fried tofu with grated ginger and radish in soy
+                                        sauce</small>
+                                    65 </li>
+                            </ul>
+                        </div>
+                        <div>
+                                <img class="icon1 hide" src="./Media_Files/icon1_menu.svg" alt="Icon">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="styled">
+                    <h3>SIDE DISHES|SIDORÄTTER</h3>
+                    <ul>
+                        <li>KIMCHI <small> Traditional Korean pickles cabbage</small> 50</li>
+                        <li>EDAMAME <small> Boiled young green soybeans with sea salt</small> 50</li>
+                        <li>KKAKDUGI KIMCHI <small> Cubed pickled radish kimchi</small> 50</li>
+                        <li>OYI MUCHIM <small> Marinated cucumber</small> 50</li>
+                        <li>SUKJU NAMUL <small> Beansprouts marinated in garlic and sesame oil </small>50</li>
+                        <li>WAKAME SALAD <small> Seasoned shredded seaweed salad</small> 50</li>
+                    </ul>
+                </div>
+
+                <div class="styled">
+                    <h3>VEGAN DISHES|VEGANRÄTTER</h3>
+                    <ul>
+                        <li>VIAGAN MAPO TOFU <small> Braised silk tofu, mushrooms, green peas, peanuts and chilli bean
+                                sauce</small> 148 </li>
+                        <li>VEGAN JAPCHAE <small> Fried vegetables, sweet potato vermicelli, mushrooms ans soy
+                                meat</small> 148</li>
+                        <li>TOFU EDAMAME <small> Braised silk tofu with edamame, shiitake mushrooms, carrot and green
+                                onion</small>
+                            148</li>
+                        <li>BRAISED DEEP FRIED TOFU <small> With vegetables, shiitake and button mushrooms in soy
+                                sauce</small> 148 </li>
+                        <li>VEGAN BIBIMBAP <small> Fried mixed dried tofu, silk tofu and vegetables with rice in bowl,
+                                Korean pickles served with spicy gochujang sauce on the side</small> 148 </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE MENU-->
+            <div class="container3">
+                <div class="styled">
+                    <h3>KOREAN DISHES|KOREANSKA RÄTTER</h3>
+                    <ul>
+                        <li>BEEF BIBIMBAP <small> Fried sliced rib eye beef ans shiitake mushrooms, served in a bowl
+                                with rice, topped with a fried egg, Korean pickles and spicy gochujang sauce</small> 155
+                        </li>
+                        <li>BEEF KIMCHI DON <small> Fried sliced rib eye beef with spicy kimchi, served in a bowl with
+                                rice.</small> 155</li>
+                        <li>CHICKEN BIBIMBAP <small> Fried sliced filet of chicken and shiitake mushrooms, served in a
+                                bowl with rice, topped with fried egg, Korean pickles and spicy gochujang sauce</small>
+                            148</li>
+                        <li>SEAFOOD BIBIMBAP <small> Fried squid, prawns and shiitake mushrooms in spicy gochujang
+                                sauce, served in a bowl with rice, topped with fried egg and Korean pickles</small> 165
+                        </li>
+                        <li>DUCK BIBIMBAP <small> Fried sliced duck filet and shiitake mushrooms in spicy gochujang
+                                sauce, served in a bowl with rice, topped with fried egg and Korean pickles</small> 165
+                        </li>
+                        <li>PORK BIBIMBAT <small>Fried sliced filet of pork and shiitake mushrooms in spicy gochujang
+                                sauce, served in a bowl with rice, topped with fried egg and Korean pickles</small> 148
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="styled">
+                    <h3>EXTRA SIDE ORDER|EXTRA TILLBEHÖR</h3>
+                    <div class="box4">
+                        <div>
+                            <ul>
+                                <li>RICE 20</li>
+                                <li>GOSHUJANG SAUCE 15</li>
+                                <li>SSAMJANG SAUCE 35</li>
+                                <li>GARLIC SAUCE 15</li>
+                                <li>FRIED EGG 15</li>
+                                <li>EXTRA ENTRECOTE 55</li>
+                                <li>EXTRA CHICKEN 40</li>
+                                <li>EXTRA PORK 45</li>
+                                <li>EXTRA VEGETABLES 78</li>
+                            </ul>
+                        </div>
+                        <img class="icon1" src="./Media_Files/icon_menu.svg" alt="Icon">
+                    </div>
+                </div>
+
+                <div class="styled">
+                    <h3>DESSERT|EFTERRÄTTER</h3>
+                    <ul>
+                        <li>JAPANESE MOCHI CAKE <small> Vegan Japanese cake </small> 72</li>
+                        <li>MANGOSHERBET WITH FRUITS <small> Vegan mango sorbet </small> 82</li>
+                        <li>CLASSIC VANILLA ICE CREAM <small> With fruits in chocolate sauce </small> 78</li>
+                        <li>BANANA YAKI <small> Fried banana with classic vanilla ice cream </small> 78</li>
+                        <li>TEMPURA CLASSIC VANILLA <small> Fried ice cream </small>82</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- MAIN FOOTER -->
+    <footer class="bg-warning shadow text-center mb-5 mb-md-0">
+
+        <div class="container pt-2 container-fluid">
+            <div class="row align-items-end pb-0">
+                <!-- ADDRESS -->
+                <div class="col-md-6 small pr-0 pl-0 pt-1 pb-0">
+                    <address>
+                        <h6>Yammy Kitchen</h6>
+                        <p>Andra Långgatan 5</br>
+                            413 03 Göteborg</p>
+                    </address>
+                </div>
+                <!-- SOCIAL MEDIA -->
+                <div class="col-md-6 small align-content-center">
+                    <a href="https://www.facebook.com/YammyKitchen" target="_blank">
+                        <i class="fab fa-facebook-square fa-3x text-body "></i></a>
+                    <a href="https://www.instagram.com/yammykitchengbg/" target="_blank">
+                        <i class="fab fa-instagram fa-3x text-body pr-2 pl-2"></i></a>
+                    <i class="fab fa-telegram-plane  fa-3x text-body"></i>
+                    <p>Tel. 031-12 73 55</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREDIT TO FLATICON -->
+        <div class="credit-to-flaticon small border-top border-dark">
+            Dom fina iconerna som finns på hemsidan är gjorda av <a class="text-dark"
+                href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a> från <a
+                class="text-dark" href="https://www.flaticon.com/" title="Flaticon"
+                target="_blank">www.flaticon.com</a><i class="far fa-smile-beam pl-2"></i>
+        </div>
+
+        <!-- FIXED BOOKNG BUTTON MOBILE SCREEN ONLY-->
+        <a href="./booking.html" role="button"
+            class="btn btn-danger btn-lg btn-block rounded-0 fixed-bottom d-md-none d-lg-none">Boka
+            Bord</a>
+    </footer>
+
+
+</body>
+
+</html>

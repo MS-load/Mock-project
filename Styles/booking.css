@@ -1,0 +1,19 @@
+/*--------------Including the common style sheet-------------- */
+@import url("./style.css");
+
+main {
+  padding-top: 10rem;
+}
+
+.img-map {
+  width: 100%;
+  max-width: 16rem;
+  min-width: 10rem;
+  border: 0.1rem solid rgb(217, 83, 79);
+  border-radius: 100%;
+  height: auto;
+}
+
+main .icon {
+  height: 4rem;
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yammy Kitchen | Boka Bord</title>
+
+    <!-- EXTERNAL LIBRARIES -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5fcee0469f.js" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- STYLE SHEETS -->
+    <link rel="stylesheet" href="./Styles/booking.css" type="text/css">
+
+    <!-- FONTS  -->
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Noto+Sans:400,700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <!-- NAVIGATION BAR -->
+        <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top
+                    border-bottom border-secondary shadow ">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0" id="navbarMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item text-body"><a class="nav-link" href="./index.html">Hem</a></li>
+                    <li class="nav-item text-body"><a class="nav-link" href="#">Om Oss</a></li>
+                    <li class="nav-item text-body"><a class="nav-link" href="./menu.html">Meny</a></li>
+                    <li class="nav-item text-body"><a class="nav-link d-md-none d-lg-none" href="./booking.html">Boka Bord</a></li>
+                </ul>
+            </div>
+
+            <!-- LOGO and SVG FOR ANIMATION -->
+            <div class="mx-auto order-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="68" viewBox="0 0 708 210">
+                    <defs>
+                        <filter id="shadow">
+                            <feDropShadow dx="0.05" dy="0.2" stdDeviation="5" flood-color="white" />
+                        </filter>
+                    </defs>
+                    <ellipse cx="336" cy="105" rx="100" ry="100" class="circle" />
+                    <rect y="67" width="1073" height="114" fill="none" />
+                    <path d="M23 138v-29L1 71h10l10 19c3 5 5 9 7 14h0c2-4 4-9 7-14l10-19h10l-23 39v29H23z" class="a" />
+                    <path
+                        d="M65 117l-7 21h-9L71 71h11l23 67h-9l-7-21H65zM87 110l-7-19c-1-4-2-8-3-12h0c-1 4-2 8-3 12L66 110H87z"
+                        class="a" />
+                    <path
+                        d="M171 109c0-9-1-21-1-29h0c-2 8-5 16-8 26l-12 33h-7l-11-32c-3-9-6-18-8-26h0c0 8-1 20-1 30l-2 29H113l5-67h11l12 33c3 8 5 16 7 23h0c2-7 4-14 7-23l12-33h11l4 67h-8L171 109z"
+                        class="a" />
+                    <path
+                        d="M252 109c0-9-1-21-1-29h0c-2 8-5 16-8 26l-12 33H223l-11-32c-3-9-6-18-8-26h0c0 8-1 20-1 30l-2 29h-8l5-67H209l12 33c3 8 5 16 7 23h0c2-7 4-14 7-23l12-33h11l4 67h-8L252 109z"
+                        class="a" />
+                    <path d="M290 138v-29l-21-39h10l10 19c3 5 5 9 7 14h0c2-4 4-9 7-14l10-19h10l-23 39v29H290z"
+                        class="a" />
+                    <path d="M350 71h9v33h0c2-3 4-5 5-7l21-25h11l-24 29 26 39h-10l-22-33 -6 7v26h-9V71z" class="a" />
+                    <path d="M413 71v67h-9V71H413z" class="a" />
+                    <path d="M441 78h-21v-7h50v7h-21v60h-9V78z" class="a" />
+                    <path
+                        d="M523 136c-3 2-10 3-18 3 -19 0-33-12-33-34 0-21 14-35 35-35 8 0 14 2 16 3l-2 7c-3-2-8-3-14-3 -16 0-26 10-26 28 0 17 10 27 26 27 5 0 11-1 14-3L523 136z"
+                        class="a" />
+                    <path d="M542 71v28h33V71h9v67h-9v-32h-33v32h-9V71H542z" class="a" />
+                    <path d="M634 107h-26v24h29v7h-38V71h36v7h-28v21h26V107z" class="a" />
+                    <path
+                        d="M648 138V71h10l22 34c5 8 9 15 12 22l0 0c-1-9-1-17-1-28V71h8v67h-9l-21-34c-5-7-9-15-13-23l0 0c1 9 1 17 1 28v29H648z"
+                        class="a" />
+                </svg>
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- MAKING A RESERVATION BUTTON -->
+            <div class="navbar-collapse collapse w-100 order-2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./booking.html" role="button" class="d-none">Boka
+                            Bord</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="text-center">
+
+        <div class="container justify-content-center">
+
+            <!-- THE FIRST DISPLAY PART A-->
+            <div class="row align-items-start">
+
+                <!-- BOOKING  -->
+                <div class="col-md-6 pt-2 pt-md-5">
+                    <img class="justify-content-center icon d-md-none" src="./Media_Files/icon1_booking.svg">
+                    <h5>BOKA BORD</h5><br>
+                    Ring oss på telefonnummer</br>
+                    <h6 class="pt-2">031-12 73 55</h6></br>
+                    Eller klicka här för att</br>
+                    <button type="button" class="btn btn-danger btn-lg shadow rounded m-2"><a class="text-light"
+                            href="https://www.thefork.se/restaurang/yammy-kitchen/64200"
+                            target="_blank">BOKA</a></button>
+                </div>
+
+                <!-- OPENING HOURS -->
+                <div class="col-md-6 pt-2 pt-md-5">
+                    <img class="icon mt-1 mb-2 d-md-none" src="./Media_Files/icon2_booking.svg">
+                    <div class="container justify-content-center">
+                        <h5>ÖPPETTIDER</h5>
+                        <p>Måndag Stängt<br>
+                            Tisdag Stängt<br>
+                            Onsdag 15 – 22<br>
+                            Torsdag 15 – 22<br>
+                            Fredag 15 – 23<br>
+                            Lördag 12 – 23<br>
+                            Söndag 12 – 22</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- THE FIRST DISPLAY PART B-->
+            <div class="row align-items-center">
+
+                <!-- FIND US-->
+                <div class="col-md-6 pt-2 pt-md-5">
+                    <img class="icon pb-1" src="./Media_Files/icon3_booking.svg">
+                    <h5>HUR TAR JAG MIG DIT?</h5><br>
+                    <p>Med kollektivtrafik:<br>
+                        Hållplats Järntorget<br>
+                        Buss: Linje 60, 180, 190<br>
+                        Spårvagn: Linje 1, 3, 5, 6, 9, 10, 11</p>
+                </div>
+
+                <!-- LOCATION -->
+                <div class="col-md-6 pt-2 pt-md-5">
+                    <a href="https://goo.gl/maps/xconCWiiYQ1b7dhN7" target="_blank">
+                        <img class="img-map" src="./Media_Files/map.png" alt="Karta"></a>
+                </div>
+            </div>
+
+
+            <!-- THE FIRST DISPLAY PART C-->
+            <div class="row">
+
+                <!-- FORM -->
+                <div class="col pt-4 pt-md-5 pb-5">
+                    <h5>PRENUMERERA PÅ VÅRT NYHETSBREV</h5><br>
+                    <p>Yammy Kitchen är en restaurang där det händer mycket.
+                        Vill du bli uppdaterad på vad som händer här på restaurangen och få ett och annat erbjudande
+                        så börja prenumerera på vårt nyhetsbrev idag!</p>
+                    <form action="/my-handling-form-page" method="post">
+                        <div class="email-box">
+                            <input id="emailAddress" type="email" size="25" maxLength="50"
+                                placeholder="Fyll i din mejladress här" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                required>
+                        </div>
+                        <div class="button">
+                            <button type="submit" class="btn btn-danger shadow rounded m-2">Sänd</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- MAIN FOOTER -->
+    <footer class="bg-warning shadow text-center mb-0">
+
+        <div class="container pt-2 container-fluid">
+            <div class="row align-items-end pb-0">
+                <!-- ADDRESS -->
+                <div class="col-md-6 small pr-0 pl-0 pt-1 pb-0">
+                    <address>
+                        <h6>Yammy Kitchen</h6>
+                        <p>Andra Långgatan 5</br>
+                            413 03 Göteborg</p>
+                    </address>
+                </div>
+                <!-- SOCIAL MEDIA -->
+                <div class="col-md-6 small align-content-center">
+                    <a href="https://www.facebook.com/YammyKitchen" target="_blank">
+                        <i class="fab fa-facebook-square fa-3x text-body "></i></a>
+                    <a href="https://www.instagram.com/yammykitchengbg/" target="_blank">
+                        <i class="fab fa-instagram fa-3x text-body pr-2 pl-2"></i></a>
+                    <i class="fab fa-telegram-plane  fa-3x text-body"></i>
+                    <p>Tel. 031-12 73 55</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CREDIT TO FLATICON -->
+        <div class="credit-to-flaticon small border-top border-dark">
+            Dom fina iconerna som finns på hemsidan är gjorda av <a class="text-dark"
+                href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank">Freepik</a> från <a
+                class="text-dark" href="https://www.flaticon.com/" title="Flaticon"
+                target="_blank">www.flaticon.com</a><i class="far fa-smile-beam pl-2"></i>
+        </div>
+    </footer>
+</body>
+
+</html>

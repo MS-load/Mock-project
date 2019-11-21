@@ -1,0 +1,116 @@
+/*--------------Including the common style sheet-------------- */
+
+@import url("./style.css");
+
+main {
+    background-image: url(../Media_Files/cover_meny.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    height: 100%;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3vh;
+}
+
+.fas {
+    color:white;
+}
+
+
+/*--------------LEFT SIDE MENU-------------- */
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*--------------RIGHT SIDE MENU-------------- */
+
+.container3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+}
+
+/*--------------THE BOX STYLED-------------- */
+
+.styled {
+    background-color: rgba(51, 66, 52, 0.308);
+    border: 2px solid white;
+    padding: 1rem;
+    margin: 3vh 0vh;
+}
+
+.styled ul {
+    padding-left: 1rem;
+}
+
+.icon1 {
+    height: 8em;
+    margin-left: 3rem;
+  }
+
+
+
+
+/*--------------RESPONSIVE DESIGN-------------- */
+
+@media (min-width: 768px) {
+    .container1 {
+        flex-direction: row;
+    }
+    .container2 {
+        margin-right: 3vh;
+    }
+    .styled ul {
+        padding: auto;
+    }
+    
+    h3{
+        font-size: 1.8rem;
+    }
+
+  }
+
+@media (min-width: 992px) {
+
+    .box4 {
+        display: flex;
+        align-items: center;
+    }
+
+     .icon1 {
+        margin-right: 2rem;
+    } 
+
+    .hide{
+        display: none;
+    }
+
+    
+}
