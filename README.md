@@ -40,9 +40,3 @@ c. Booking
 4.Directly linked to the fork page for booking a table 
 
 ***
-
-## Group Members:
-	Lisa Bengtsson
-	Ellinor Carlberg
-	Mamta Srinivas
-        
